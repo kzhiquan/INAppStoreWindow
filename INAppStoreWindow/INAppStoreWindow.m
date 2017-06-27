@@ -700,6 +700,14 @@ NS_INLINE void INApplyClippingPathInCurrentContext(CGPathRef path) {
 	[self _updateBottomBarView];
 }
 
+- (void)update
+{
+	[self _updateTitlebarView];
+	[self _updateBottomBarView];
+	[self _layoutTrafficLightsAndContent];
+	[self _setupTrafficLightsTrackingArea];
+}
+
 - (void)setContentView:(NSView *)aView
 {
 	// Remove performance-optimized content view class when changing content views

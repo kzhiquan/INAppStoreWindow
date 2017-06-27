@@ -341,4 +341,6 @@ typedef void (^INAppStoreWindowBackgroundDrawingBlock)(BOOL drawsAsMainWindow, C
  */
 - (CGFloat)toolbarHeight;
 
+- (void)update;
+
 @end
